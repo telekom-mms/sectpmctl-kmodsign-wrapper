@@ -3,7 +3,7 @@ Section: config
 Priority: optional
 Maintainer: Richard Robert Reitz <richard-robert.reitz@telekom.de>
 Rules-Requires-Root: no
-Build-Depends: debhelper (>= 7.0.50~), config-package-dev (>= 4.15~)
+Build-Depends: curl, debhelper (>= 7.0.50~), config-package-dev (>= 4.15~)
 Standards-Version: 4.1.0
 
 Package: sectpmctl-kmodsign-wrapper
