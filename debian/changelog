@@ -1,0 +1,5 @@
+sectpmctl-kmodsign-wrapper (1.0) jammy; urgency=low
+
+  * Initial release.
+
+ -- Richard Robert Reitz <richard-robert.reitz@telekom.de>  Fri, 04 Aug 2023 13:08:23 +0200

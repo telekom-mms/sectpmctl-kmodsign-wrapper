@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# SECTPMCTL wrapper uses the TPM by ignoring hash, key and certificate
+
+# Path's
+SECTPMCTL_KEYS="/var/lib/sectpmctl/keys"
+
+if [[ $# -eq 4 ]]; then
+  /usr/lib/sectpmctl/scripts/kmodsign.sh sha256 "${SECTPMCTL_KEYS}/db.obj" "${SECTPMCTL_KEYS}/db.cer" "$4"
+elif [[ $# -eq 5 ]]; then
+  /usr/lib/sectpmctl/scripts/kmodsign.sh sha256 "${SECTPMCTL_KEYS}/db.obj" "${SECTPMCTL_KEYS}/db.cer" "$4" "$5"
+else
+  echo SECTPMCTL wrapper, see tpmkmodsign -h and /usr/lib/sectpmctl/scripts/kmodsign.sh
+fi
+
