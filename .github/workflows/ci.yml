@@ -25,7 +25,7 @@ jobs:
 
       - name: Build package
         run: |+
-          debuild -b -uc -us
+          make package_build
           cd ..
           echo "Result: $(ls *.deb)"
           sha256sum *.deb > checksums.txt
