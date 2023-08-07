@@ -11,5 +11,6 @@ package_clean:
 	-rm -Rf debian/$(firstword $(subst _, ,$(lastword $(subst /, ,$(shell pwd)))))
 	-rm debian/$(firstword $(subst _, ,$(lastword $(subst /, ,$(shell pwd))))).debhelper.log
 	-rm debian/$(firstword $(subst _, ,$(lastword $(subst /, ,$(shell pwd))))).substvars
+	-rm debian/$(firstword $(subst _, ,$(lastword $(subst /, ,$(shell pwd))))).p*
 	-rm debian/files
 	-rm ../$(lastword $(subst /, ,$(shell pwd)))?*

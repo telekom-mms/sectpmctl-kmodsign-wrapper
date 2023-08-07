@@ -1,0 +1,10 @@
+*.deb
+/debian/changelog
+/debian/.debhelper
+/debian/files
+/debian/sectpmctl-kmodsign-wrapper.debhelper.log
+/debian/sectpmctl-kmodsign-wrapper.postinst.debhelper
+/debian/sectpmctl-kmodsign-wrapper.prerm.debhelper
+/debian/sectpmctl-kmodsign-wrapper.substvars
+/debian/sectpmctl-kmodsign-wrapper
+
